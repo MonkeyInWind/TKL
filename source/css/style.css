@@ -227,6 +227,14 @@ hr {
 	display: table-cell;
 	vertical-align: middle;
 }
+#hero .center-me h2 {
+  display: none;
+}
+#hero .center-me p {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
 /* No padding on-the-fly */
 .nopadding {
 	padding: 0;
