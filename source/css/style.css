@@ -727,6 +727,10 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 	overflow-y: auto;
 	overflow-x: hidden;
 }
+.sb-title {
+  color: #fff;
+  padding: 10px 0 0 44px;
+}
 .sb-slidebar a {
 	color: #666; /* Link colour. */
 	text-decoration: none;
@@ -739,7 +743,7 @@ html.sb-init.sb-active.sb-active-right #projects .filter-item div a {
 }
 /* Off-canvas menu items */
 .sb-menu {
-	padding: 34px 34px 24px;
+	padding: 24px 34px;
 	margin: 0;
 	list-style-type: none;
 }

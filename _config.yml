@@ -1,6 +1,6 @@
 # config
 cover: /img/bg_img.jpg
-logo: /img/logo.png
+# logo: /img/logo.png
 top_saying:
 #- title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
   - content: 大圣次去何为？
@@ -11,7 +11,7 @@ top_saying:
 # Content
 excerpt_link: Read More
 
-rss: /atom.xml
+# rss: /atom.xml
 
 highlightjs: vs
 
@@ -32,11 +32,11 @@ disqus_shortname:
 fancybox: true
 
 # Miscellaneous
-github: https://github.com/
-twitter: https://twitter.com/
-facebook: https://www.facebook.com/
-google: https://google.com/
-weibo: http://weibo.com/
+github: https://github.com/MonkeyInWind 
+# twitter: https://twitter.com/
+# facebook: https://www.facebook.com/
+# google: https://google.com/
+# weibo: http://weibo.com/
 
 #about  timeline
 timeline:
