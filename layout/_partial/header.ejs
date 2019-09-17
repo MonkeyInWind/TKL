@@ -5,7 +5,6 @@
             <img src="<%- config.root %>img/close.png" alt="Close"/>
         </div>
         <!-- Lists in Slidebars -->
-        <h2 class="sb-title"><%- config.title %></h2>
         <ul class="sb-menu">
             <li><a href="<%- config.root %>" class="animsition-link" title="Home">Home</a></li>
             <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">archives</a></li>
@@ -20,12 +19,29 @@
                 </ul>
             </li>
             <% } %>
-            <% if (site.categories.length){ %>
+            <% if (theme.categories.length){ %>
         	<li>
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
-				  	<% site.categories.sort('name').each(function(item){ %>
-				    <li><a href="<%- config.root %><%- item.path %>" class="animsition-link"><%= item.name %><small>(<%= item.posts.length %>)</small></a></li>
+				  	<% theme.categories.forEach(function(item){ %>
+				    <li>
+                        <a class="sb-toggle-submenu">
+                            <%= item.name %>
+                            <small>( <%= item.posts.length %> )</small>
+                            <span class="sb-caret"></span>
+                        </a>
+                        <% if (item.posts.length) { %>
+                            <ul class="sb-submenu">
+                                <% item.posts.forEach(function(post){ %>
+                                    <li>
+                                        <a href="<%- post.path %>" class="animsition-link">
+                                            <%= post.name %>
+                                        </a>
+                                    </li>
+                                <% }); %>
+                            </ul>
+                        <% } %>
+                    </li>
 				    <% }); %>
 				</ul>
         	</li>
@@ -46,11 +62,11 @@
             <% if (theme.local_search.enable) { %>
             <li><a href="javascript:;" class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
             <% } %>
-            <li><a href="<%- config.root %>about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="<%- config.root %>about/" class="animsition-link" title="about">About</a></li>
             <li><a href="<%- config.root %>atom.xml" class="animsition-link" title="rss">RSS</a></li>
         </ul>
     </div>
-    
+
     <!-- ============================ END Off-canvas navigation =========================== -->
 
     <!-- ============================ #sb-site Main Page Wrapper =========================== -->
@@ -66,15 +82,16 @@
                     <!-- Nav logo -->
                     <div class="logo">
                         <a href="/" title="Logo" class="animsition-link">
-                        <% if (theme.logo) { %> <img src="<%- theme.logo %>" alt="Logo" width="35px;"/> <% } %>
+                          <% if (config.title) { %> <h1><%- config.title %></h1> <% } %>
+                          <% if (theme.logo) { %> <img src="<%- theme.logo %>" alt="Logo" width="35px;"/> <% } %>
                         </a>
                     </div>
                     <!-- // Nav logo -->
                     <!-- Info-bar -->
                     <nav>
                         <ul class="nav">
-                            <li><a href="/" class="animsition-link"><%- config.title %></a></li>
-                            <li class="nolink"><span>Always </span>Creative.</li>
+                            <!-- <li><a href="/" class="animsition-link"><%- config.title %></a></li> -->
+                            <li class="nolink"><span>Blog</span></li>
                             <% if(theme.github){ %>
                             <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="icon-github"></i></a></li>
                             <% } %>
@@ -108,4 +125,3 @@
         </div>
 
         <!-- ============================ Header & Logo bar =========================== -->
-

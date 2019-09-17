@@ -6,7 +6,7 @@ top_saying:
   - content: 大圣次去何为？
   - content: 踏碎凌霄
   - content: 若一去不回？
-  - content: 那就不去了
+  - content: 那便不去了
 # bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话比较和谐。
 # Content
 excerpt_link: Read More
@@ -16,12 +16,18 @@ excerpt_link: Read More
 highlightjs: vs
 
 #Works
-works:
-- works_name: AAA
-  works_url: /
-- works_name: BBB
-  works_url: /atom.xml
-
+# works:
+# - works_name: AAA
+#   works_url: /
+# - works_name: BBB
+#   works_url: /atom.xml
+#Categories
+categories:
+  - name: Flutter
+    path: /Flutter
+    posts:
+      - name: q
+        path: /post/flutter1
 #duoshuo name
 duoshuo:
 
@@ -32,7 +38,7 @@ disqus_shortname:
 fancybox: true
 
 # Miscellaneous
-github: https://github.com/MonkeyInWind 
+github: https://github.com/MonkeyInWind
 # twitter: https://twitter.com/
 # facebook: https://www.facebook.com/
 # google: https://google.com/
