@@ -24,13 +24,34 @@ highlightjs: vs
 #Categories
 categories:
   - name: Flutter
-    path: /Flutter
     posts:
       - name: flutter for web
         path: /post/flutterForWeb
   - name: React
-    path: /React
     posts:
+      - name: react-router刷新404 nginx配置
+        path: /post/reactRouterNginx
+  - name: Js
+    posts:
+      - name: 视频切片转m3u8
+        path: /post/videoToM3U8
+      - name: 一个移动端翻页的封装
+        path: /post/likeSwiper
+  # - name: Node
+  #   posts:
+  #     - name:
+  - name: DB
+    posts:
+      - name: centos 安装mysql8 以及常用sql语句
+        path: /post/centOsInstallMysql
+      - name: mac Mysql8密码
+        path: /post/macMysql8Password
+  - name: Nginx
+    posts:
+      - name: react-router刷新404 nginx配置
+        path: /post/reactRouterNginx
+      - name: Linux下安装Nginx
+        path: /post/installNginxLinux
 #duoshuo name
 duoshuo:
 
