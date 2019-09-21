@@ -26,8 +26,11 @@ categories:
   - name: Flutter
     path: /Flutter
     posts:
-      - name: q
-        path: /post/flutter1
+      - name: flutter for web
+        path: /post/flutterForWeb
+  - name: React
+    path: /React
+    posts:
 #duoshuo name
 duoshuo:
 
@@ -57,10 +60,10 @@ timeline:
 
 #Links
 links:
-- name: Kieran
-  link: http://go.kieran.top/
-- name: Name
-  link: http://domain.com/
+# - name: Kieran
+#   link: http://go.kieran.top/
+# - name: Name
+#   link: http://domain.com/
 
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search

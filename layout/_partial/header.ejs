@@ -27,10 +27,12 @@
 				    <li>
                         <a class="sb-toggle-submenu">
                             <%= item.name %>
-                            <small>( <%= item.posts.length %> )</small>
+                            <% if(item.posts) {%>
+                                <small>( <%= item.posts.length %> )</small>
+                            <% } %>
                             <span class="sb-caret"></span>
                         </a>
-                        <% if (item.posts.length) { %>
+                        <% if (item.posts && item.posts.length) { %>
                             <ul class="sb-submenu">
                                 <% item.posts.forEach(function(post){ %>
                                     <li>
@@ -62,8 +64,8 @@
             <% if (theme.local_search.enable) { %>
             <li><a href="javascript:;" class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
             <% } %>
-            <li><a href="<%- config.root %>about/" class="animsition-link" title="about">About</a></li>
-            <li><a href="<%- config.root %>atom.xml" class="animsition-link" title="rss">RSS</a></li>
+            <!-- <li><a href="<%- config.root %>about/" class="animsition-link" title="about">About</a></li> -->
+            <!-- <li><a href="<%- config.root %>atom.xml" class="animsition-link" title="rss">RSS</a></li> -->
         </ul>
     </div>
 
