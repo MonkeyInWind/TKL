@@ -37,6 +37,8 @@ categories:
         path: /post/videoToM3U8
       - name: 一个移动端翻页的封装
         path: /post/likeSwiper
+      - name: 花瓣飘落效果
+        path: /post/petalsFluttered
   # - name: Node
   #   posts:
   #     - name:
